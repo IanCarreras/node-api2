@@ -8,7 +8,7 @@ const app = express()
 
 app.use(express.json())
 app.use('/', postsRouter)
-// app.use('/api/posts', idRouter)
+app.use('/api/posts', idRouter)
 
 
 app.listen(port, host, () => {
